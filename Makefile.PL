@@ -5,8 +5,9 @@ WriteMakefile(
     'NAME'		=> 'Math-BigInt-Constant',
     'VERSION_FROM'	=> 'lib/Math/BigInt/Constant.pm', # finds $VERSION
     'PREREQ_PM'		=> {
-			   Math::BigFloat => 1.26,
-			   Math::BigInt => 1.50,
+			   Math::BigFloat => 1.43,
+			   Math::BigInt => 1.69,
+			   Test::Simple => 0.47,
 			   }, # e.g., Module::Name => 1.1
     'LIBS'		=> [''], # e.g., '-lm'
     'DEFINE'		=> '', # e.g., '-DHAVE_SOMETHING'

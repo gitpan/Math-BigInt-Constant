@@ -1,0 +1,39 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.36.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It would check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+
+SHA1 a77182f1555b7351b2a47f039e0def1482043500 BUGS
+SHA1 e96749c2d479368eabbb21900fcc29b94004b3d1 CHANGES
+SHA1 f930a8fd2a569881d26a7056bccd09f0eb855a9b INSTALL
+SHA1 d6a6c30ee6d9ba6b9afab8bbf6a25e1b23c744e0 LICENSE
+SHA1 c3bd3a0607785de4580df2bc2ccc5789e018f619 MANIFEST
+SHA1 6e2637c1d43e2ec5fb978a7f4e62276f7910d627 META.yml
+SHA1 5503c8e27811f568c94466e562f454ea7d8e3c2a Makefile.PL
+SHA1 9a192e40a05c73cb480e1ed4df7dc6f0bc984b89 NEW
+SHA1 a4ca69c8b9c7bf2bb359d212aeac4d93510ee1a2 README
+SHA1 a6ebe91f052f591c91f8310f393657ccf35e3bf2 TODO
+SHA1 a6c793f0bac19aa356f9b858d8e7a622724d7844 lib/Math/BigInt/Constant.pm
+SHA1 962ff39201da130a7a9dac4f9830697c90e3fa5b t/bigintcpm.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.2-rc1-SuSE (GNU/Linux)
+Comment: When cryptography is outlawed, bayl bhgynjf jvyy unir cevinpl.
+
+iQEVAwUBQALyzHcLPEOTuEwVAQF5hAf+KrfMECtdSUDGOI5d4p5kzjUHCoFHdMGg
+QXV2btTEmRdD2/ziOa1T3aBQ4FZF7vIr7262RJBVd1JW1xoR65HCFUNFEUVyBHoJ
+CqwCnmYJltdvUO7CL6hgHsH2pjvq8RlLE0meKQj/iHUauKnA222HvF17vamS4VzE
+xKFrO8ytmYhGVlrBMJ1nzaVrU6f11iS/xtNvgH0miuFatmumltd7ysEx9HDwlsyA
+p6CQFQYojViIsDb4fUwXRd1uhg7CWSQYc8MfSflzDrr9BMkZIggI1jZtW4N6WYNV
+Zfge3epU9zH6U1Z/BfGjF8JPJjqRYIzLW/jjVjGwEbZB1zcTHPydVw==
+=8b1T
+-----END PGP SIGNATURE-----

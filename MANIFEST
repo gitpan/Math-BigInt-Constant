@@ -1,11 +1,13 @@
 CHANGES
-README
+BUGS
 INSTALL
 LICENSE
 MANIFEST
 NEW
+README
+SIGNATURE
 TODO
-BUGS
 Makefile.PL
 lib/Math/BigInt/Constant.pm
 t/bigintcpm.t			# test it
+META.yml			# Module meta-data (added by MakeMaker)

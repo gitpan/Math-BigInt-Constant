@@ -1,0 +1,11 @@
+CHANGES
+README
+INSTALL
+LICENSE
+MANIFEST
+NEW
+TODO
+BUGS
+Makefile.PL
+lib/Math/BigInt/Constant.pm
+t/bigintcpm.t			# test it

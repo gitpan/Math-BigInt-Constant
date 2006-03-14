@@ -1,12 +1,12 @@
---- #YAML:1.0
+---
 name: Math-BigInt-Constant
-version: 1.06
+version: 1.07
 version_from: lib/Math/BigInt/Constant.pm
 license: perl
 distribution_type: module
-generated_by: Math-BigInt-Constant version 1.06
+generated_by: Math-BigInt-Constant version 1.07
 installdirs: site
 requires:
-  Math::BigFloat: 1.48
-  Math::BigInt: 1.74
+  Math::BigFloat: 1.51
+  Math::BigInt: 1.77
   Test::Simple: 0.47

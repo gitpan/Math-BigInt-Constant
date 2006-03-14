@@ -9,7 +9,8 @@ sub MY::metafile {
     return $self->SUPER::metafile_target(@_);
   };
 
-  my $node = new YAML::Node {};
+  use YAML::Node;
+  my $node = YAML::Node->new({});
 
   $node->{name}			= $self->{DISTNAME};
   $node->{version}		= $self->{VERSION};
@@ -32,8 +33,8 @@ WriteMakefile(
     'NAME'		=> 'Math-BigInt-Constant',
     'VERSION_FROM'	=> 'lib/Math/BigInt/Constant.pm', # finds $VERSION
     'PREREQ_PM'		=> {
-			   Math::BigFloat => 1.48,
-			   Math::BigInt => 1.74,
+			   Math::BigFloat => 1.51,
+			   Math::BigInt => 1.77,
 			   Test::Simple => 0.47,
 			   },
     'LIBS'		=> [''], # e.g., '-lm'

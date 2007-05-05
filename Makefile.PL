@@ -1,43 +1,26 @@
-use ExtUtils::MakeMaker;
 
-sub MY::metafile {
-  package MY;
-  my $self = shift;
-  if (!eval { require YAML; 1 })
-  {
-    warn ("YAML not installed, 'make dist' will not override META.yml");
-    return $self->SUPER::metafile_target(@_);
-  };
+# We need at least Perl 5.6.2
+require 5.6.2;
+use strict;
 
-  use YAML::Node;
-  my $node = YAML::Node->new({});
+# Load the Module::Install bundled in ./inc/
+use inc::Module::Install;
 
-  $node->{name}			= $self->{DISTNAME};
-  $node->{version}		= $self->{VERSION};
-  $node->{version_from}		= $self->{VERSION_FROM};
-  $node->{license}		= 'perl';
-  $node->{distribution_type}	= 'module';
-  $node->{generated_by}		= "$self->{DISTNAME} version $self->{VERSION}";
-  $node->{installdirs}		= 'site';
-  $node->{requires}		= $self->{PREREQ_PM};
+# The name of your distribution
+name		'Math-BigInt-Constant';
 
-  my $dump = YAML::Dump( $node );
+# Get most of the details from the primary module
+all_from	'lib/Math/BigInt/Constant.pm';
 
-  $dump =~ s/^(.*)$/\t\$(NOECHO) \$(ECHO) "$1" >>META.yml/gm;
-  $dump =~ s/>>META\.yml/>META.yml/;
+requires	'perl'		=> 5.006002;
+requires	'Math::BigInt'	=> '1.85';
 
-  return "metafile:\n$dump";
-}
+build_requires	'Test::More'	=> 0.62;
 
-WriteMakefile(
-    'NAME'		=> 'Math-BigInt-Constant',
-    'VERSION_FROM'	=> 'lib/Math/BigInt/Constant.pm', # finds $VERSION
-    'PREREQ_PM'		=> {
-			   Math::BigFloat => 1.51,
-			   Math::BigInt => 1.77,
-			   Test::Simple => 0.47,
-			   },
-    'LIBS'		=> [''], # e.g., '-lm'
-    'DEFINE'		=> '', # e.g., '-DHAVE_SOMETHING'
-    'INC'		=> '', # e.g., '-I/usr/include/other'
-);
+license		'perl';
+
+author		'Tels <nospam-abuse@bloodgate.com>';
+
+# Generate the Makefile
+WriteAll;
+

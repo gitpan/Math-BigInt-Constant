@@ -1,13 +1,27 @@
-CHANGES
 BUGS
+Build.PL
+CHANGES
+inc/Module/Install.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Build.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
 INSTALL
+lib/Math/BigFloat/Constant.pm
+lib/Math/BigInt/Constant.pm
 LICENSE
+Makefile.PL
 MANIFEST
-NEW
+MANIFEST.SKIP
+META.yml			# Module meta-data (added by MakeMaker)
 README
 SIGNATURE
+t/bigfltcpm.t
+t/bigintcpm.t
+t/pod.t
+t/pod_cov.t
 TODO
-Makefile.PL
-lib/Math/BigInt/Constant.pm
-t/bigintcpm.t			# test it
-META.yml			# Module meta-data (added by MakeMaker)

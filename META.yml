@@ -1,12 +1,20 @@
----
-name: Math-BigInt-Constant
-version: 1.07
-version_from: lib/Math/BigInt/Constant.pm
-license: perl
+--- 
+abstract: Arbitrary sized constant integers
+author: Tels <nospam-abuse@bloodgate.com>
+build_requires: 
+  Test::More: 0.62
 distribution_type: module
-generated_by: Math-BigInt-Constant version 1.07
-installdirs: site
-requires:
-  Math::BigFloat: 1.51
-  Math::BigInt: 1.77
-  Test::Simple: 0.47
+generated_by: Module::Install version 0.65
+license: perl
+meta-spec: 
+  url: http://module-build.sourceforge.net/META-spec-v1.3.html
+  version: 1.3
+name: Math-BigInt-Constant
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Math::BigInt: 1.85
+  perl: 5.6.2
+version: 1.08
